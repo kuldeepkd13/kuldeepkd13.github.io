@@ -11,18 +11,5 @@ var typeData = new Typed(".role", {
   });
 
 
-
-  const menuBtn = document.querySelector("#menu-icon-btn");
-  const sidebarMenu = document.querySelector("#sidebar-menu");
-  const closeBtn = document.querySelector("#close-icon");
-
-  menuBtn.addEventListener("click", () => {
-    sidebarMenu.style.right = '0px';
-  });
-
-  closeBtn.addEventListener("click", () => {
-    sidebarMenu.style.right = '-250px';
-  });
-
   GitHubCalendar(".calendar", "kuldeepkd13");
   GitHubCalendar(".calendar", "kuldeepkd13", { responsive: true });
