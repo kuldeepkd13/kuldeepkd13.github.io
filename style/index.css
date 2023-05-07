@@ -436,11 +436,11 @@
   
   }
   
-  #skills-sec{
+  #skills{
     background-color: #F6EFE9;
     padding: 20px 0px;
   }
-  #skills-sec > h1 {
+  #skills > h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: bolder;
@@ -530,7 +530,7 @@
 /* Styling for Projects section */
 
 
-#projects-sec{
+#projects{
   background-color: #F6EFE9;
 }
 
