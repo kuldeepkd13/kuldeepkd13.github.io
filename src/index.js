@@ -13,3 +13,11 @@ var typeData = new Typed(".role", {
 
   GitHubCalendar(".calendar", "kuldeepkd13");
   GitHubCalendar(".calendar", "kuldeepkd13", { responsive: true });
+
+
+
+
+  var runredirect = function () {
+    var redirectw1 = window.open('https://drive.google.com/file/d/16JrcbczRe513_FSivXWaQdbFUyytkddO/view?usp=share_link');
+    redirectw1.location;
+}
