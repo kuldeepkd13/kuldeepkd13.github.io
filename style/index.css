@@ -352,38 +352,6 @@
     }
   }
 
-
-
-
-
-  /* Media queries */
-  @media screen and (max-width: 780px) {
-   
-    #nav-menu {
-      display: none;
-    }
-  
-    
-    #menu-icon {
-      display: block;
-    }
-  
-    
-    #sidebar-menu {
-      display: block;
-    }
-
-    .hero-section-left{
-        width:50%;
-    }
-
-    .hero-section-right{
-        width: 50%;
-    }
-
-  }
-
-
   
 #about{
   background-color: #626262;
@@ -711,3 +679,31 @@
   height: 40px;
   border-radius: 5px;
 }
+
+
+  /* Media queries */
+  @media screen and (max-width: 780px) {
+   
+    #nav-menu {
+      display: none;
+    }
+  
+    
+    #menu-icon {
+      display: block;
+    }
+  
+    
+    #sidebar-menu {
+      display: block;
+    }
+
+    .hero-section-left{
+        width:50%;
+    }
+
+    .hero-section-right{
+        width: 50%;
+    }
+
+  }
