@@ -2,111 +2,117 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/style/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldeep Portfolio</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 <body>
-  <div id="navbar">
-    <div class="name">
-      <p id="user-detail-name" class="logo">Kuldeep Singh Negi</p>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-    <div id="menu-icon">
-      <i id="menu-icon-btn" class="fa fa-bars"></i>
-    </div>
-    <div id="nav-menu">
-      <div><a href="#" class="active nav-link home">Home</a></div>
-      <div><a href="#about" class="nav-link about section">About</a></div>
-      <div><a href="#skills-sec" class="nav-link skills">Skills</a></div>
-      <div><a href="#projects-sec" class="nav-link projects">Projects</a></div>
-      <div><a href="#contact" class="nav-link contact">Contact</a></div>
-      <div id="resume-button-1" onclick="runredirect()"><a id="resume-link-1" class="nav-link resume" href="./downlode/Kuldeep-Singh-Negi-Resume.pdf"
-        download>Resume</a> </div>
-    </div>
-  </div>
-
-  
-
-
-  <!-- home section  -->
-
-
-  <div class="hero-section" id="home">
-
-    <div class="hero-section-left">
-      <div class="hero-section-heading">Hi, I'm Kuldeep Singh Negi</div>
-
-      <div class="hero-section-heading hero-section-sub-heading">
-        I am a <span class="role"></span>
-      </div>
-
-      <div id="resume-button-2" class="btn-pink" onclick="runredirect()"><a id="resume-link-2" class="nav-link resume"
-          href="./downlode/Kuldeep-Singh-Negi-Resume.pdf" download>Resume</a></div>
-
-    </div>
-
-    <div class="hero-section-right">
-      <div class="absolute icons icon-dots">
-        <img src="./image/userAsset/dots.png" alt="dot" />
-      </div>
-      <div class="absolute icons icon-cube">
-        <img src="./image/userAsset/cube.png" alt="cube" />
-      </div>
-      <div class="absolute icons icon-circle">
-        <img src="./image/userAsset/circle.png" alt="circle" />
-      </div>
-      <div class="absolute icons icon-zigzag">
-        <img src="./image/userAsset/zigzags.png" alt="zigzags" />
-      </div>
-      <div class="absolute icons icon-plus">
-        <img src="./image/userAsset/plus.png" alt="plus" />
-      </div>
-      <div class="user-image">
-        <img class="home-img" src="./image/userAsset/UserImage.jpg" alt="Image" />
-      </div>
-    </div>
-
-  </div>
+    <nav id="navbar" class="navbar">
+        <div class="max-width">
+            <div id="user-detail-name" class="logo"><a href="#">Portf<span>olio.</span></a></div>
+            <ul id="nav-menu" class="menu">
+                <li><a href="#home" class="nav-link menu-btn">Home</a></li>
+                <li><a href="#about" class="nav-link about  menu-btn">About</a></li>
+                <li><a href="#skills-sec" class="nav-link skills  menu-btn">Skills</a></li>
+                <li><a href="#projects-sec" class="nav-link projects  menu-btn">Projects</a></li>
+                <li><a href="#contact" class="nav-link content  menu-btn">Contact</a></li>
+                <li id="resume-button-1" onclick="runredirect()"><a id="resume-link-1" class="nav-link resume"
+                        href="./downlode/Kuldeep-Singh-Negi-Resume.pdf" download>Resume</a> </li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
 
+    <!-- home section start -->
+
+    <section class="hero-section" id="home">
+        <div class="max-width">
+            <div class="hero-section-left">
+                <div class="hero-section-heading">Hi, I'm Kuldeep Singh Negi</div>
+
+                <div class="hero-section-heading hero-section-sub-heading">
+                    I am a <span class="role"></span>
+                </div>
+
+                <div id="resume-button-2" onclick="runredirect()"><a id="resume-link-2" class="nav-link resume"
+                        href="./downlode/Kuldeep-Singh-Negi-Resume.pdf" download>Resume</a></div>
+
+            </div>
+
+            <div class="hero-section-right">
+                <div class="absolute icons icon-dots">
+                    <img src="./image/userAsset/dots.png" alt="dot" />
+                </div>
+                <div class="absolute icons icon-cube">
+                    <img src="./image/userAsset/cube.png" alt="cube" />
+                </div>
+                <div class="absolute icons icon-circle">
+                    <img src="./image/userAsset/circle.png" alt="circle" />
+                </div>
+                <div class="absolute icons icon-zigzag">
+                    <img src="./image/userAsset/zigzags.png" alt="zigzags" />
+                </div>
+                <div class="absolute icons icon-plus">
+                    <img src="./image/userAsset/plus.png" alt="plus" />
+                </div>
+                <div class="user-image">
+                    <img class="home-img" src="./image/userAsset/UserImage.jpg" alt="Image" />
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
-  <!-- about me -->
+    <!-- about section start -->
+    <section id="about" class="about section">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img class="home-img" src="/image/userAsset/UserImage.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Kuldeep and I'm a <span class="typing-2"></span></div>
+                    <p id="user-detail-intro">Full stack Web Developer with proficiency in working with
+                        interdisciplinary teams and
+                        executing goal-oriented projects. Capable of writing production-ready code using HTML, CSS, and
+                        JavaScript on the frontend. NodeJS and express on the backend. Passionate about coding and
+                        intensely interested in working in a progressive organization.</p>
+                        <div class="home-social">
+                            <a href="https://github.com/kuldeepkd13" id="contact-github" target="_blank">
+                              <img style="width: 38px; border-radius: 5px; height: 38px; margin-bottom: 10px; "
+                                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github">
+                            </a>
+                            <a href="https://www.linkedin.com/in/kuldeep-negi-2b23b41a5/" id="contact-linkedin" target="_blank">
+                              <img style="width: 40px; height: 38px; border-radius: 5px; margin-bottom: 10px; margin-left: 8px;"
+                                src="/image/userAsset/linkdin1.png" alt="linkedin">
+                            </a>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about" class="about section">
-    <div><img src="/image/userAsset/UserImage.jpg" class="home-img" alt="Kuldeep">
-    </div>
-    <div>
-      <h1>About Me</h1>
-      <p id="user-detail-intro">Full stack Web Developer with proficiency in working with interdisciplinary teams and
-        executing goal-oriented projects. Capable of writing production-ready code using HTML, CSS, and JavaScript on
-        the frontend. NodeJS and express on the backend. Passionate about coding and intensely interested in working in
-        a progressive organization.</p>
-      <div class="home-social">
-        <a href="https://github.com/kuldeepkd13" id="contact-github" target="_blank">
-          <img style="width: 38px; border-radius: 5px; height: 38px; margin-bottom: 10px; "
-            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github">
-        </a>
-        <a href="https://www.linkedin.com/in/kuldeep-negi-2b23b41a5/" id="contact-linkedin" target="_blank">
-          <img style="width: 40px; height: 38px; border-radius: 5px; margin-bottom: 10px; margin-left: 8px;"
-            src="/image/userAsset/linkdin1.png" alt="linkedin">
-        </a>
-      </div>
-    </div>
-  </section>
+ <!-- skills -->
 
 
-  <!-- skills -->
-
-  <section id="skills-sec"></section>
-
-  <section id="skills">
+ <section id="skills-sec">
     <h1>Technical Skills</h1>
 
     <div class="lines">
@@ -178,9 +184,9 @@
 
 
   <!-- project -->
-<section id="projects-sec"></section>
 
-  <section class="project" id="projects">
+
+  <section class="project" id="projects-sec">
     <div id="project">
 
       <h1 class="title">Projects</h1>
@@ -322,7 +328,37 @@
   </section>
 
 
+
+
+
+
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+
+    var typeData = new Typed(".role", {
+        strings: [
+            "Full Stack Web Developer",
+            "NodeJs Backend Developer",
+            "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+    });
+
+    GitHubCalendar(".calendar", "kuldeepkd13");
+  GitHubCalendar(".calendar", "kuldeepkd13", { responsive: true });
+
+
+  var runredirect = function () {
+    var redirectw1 = window.open('https://drive.google.com/file/d/16JrcbczRe513_FSivXWaQdbFUyytkddO/view?usp=share_link');
+    redirectw1.location;
+}
+</script>
 <script src="/src/index.js"></script>
+
 </html>
