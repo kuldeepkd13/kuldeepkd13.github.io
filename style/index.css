@@ -460,7 +460,7 @@ section .title::after {
 }
 
 
-#skills-sec .title::after {
+#skills .title::after {
   content: "what i have";
   background: #F6EFE9;
 }
@@ -470,7 +470,7 @@ section .title::after {
 
 }
 
-#skills-sec {
+#skills {
   background-color: #F6EFE9;
   padding: 20px 0px;
 }
