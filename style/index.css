@@ -530,7 +530,7 @@ section .title::after {
 
 /* Styling for Projects section */
 
-#project .title::after {
+#project1 .title::after {
   content: "what i have built";
 }
 .project {
@@ -543,7 +543,7 @@ section .title::after {
   margin: auto;
 }
 
-.project #project {
+.project #project1 {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -963,7 +963,7 @@ footer {
 }
 
 @media (max-width: 385px) {
-  #project .title::after {
+  #project1 .title::after {
   font-size: 17px;  
   }
 }
