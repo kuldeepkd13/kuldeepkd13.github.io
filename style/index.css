@@ -45,7 +45,7 @@ section {
 .teams,
 .contact,
 footer {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .about .about-content,
@@ -58,7 +58,7 @@ footer {
   justify-content: space-between;
 }
 
-section .title {
+section .title  , section .title1 {
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -68,7 +68,7 @@ section .title {
   font-family: 'Ubuntu', sans-serif;
 }
 
-section .title::before {
+section .title::before , .title1::before{
   content: "";
   position: absolute;
   bottom: 0px;
@@ -150,7 +150,7 @@ section .title::after {
 
 /* menu btn styling */
 .menu-btn {
-  color: #fff;
+  color: red;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -218,7 +218,7 @@ section .title::after {
 
 #home .max-width {
   width: 100%;
-  display: flex;
+  /* display: flex; */
 }
 
 
@@ -240,30 +240,12 @@ section .title::after {
   background: none;
 }
 
-
-/* .hero-section{
-    width:100%;
-    position:relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin: 6rem auto;
-    padding: 0 2.5rem;
-    padding-bottom: 8rem;
-} */
-
-
 .hero-section-left {
   width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-}
-
-.hero-section-right {
-  width: 35%;
 }
 
 .hero-section-heading {
@@ -282,9 +264,6 @@ section .title::after {
   line-height: 40px;
 }
 
-.hero-section-right {
-  position: relative;
-}
 
 .absolute {
   position: absolute;
@@ -302,124 +281,6 @@ section .title::after {
   width: 100%;
   z-index: -9;
 }
-
-@keyframes scaleImage {
-
-  0% {
-    filter: grayscale(0);
-    transform: scale(1);
-
-  }
-
-  50% {
-    transform: scale(1.1);
-    filter: grayscale(1);
-    box-shadow: 3px 3px 10px black;
-  }
-
-  100% {
-    transform: scale(1);
-    filter: grayscale(0);
-  }
-
-}
-
-
-.icon-dots {
-  z-index: 9;
-  bottom: -1rem;
-  right: 0;
-  animation-name: dotsAnimation;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes dotsAnimation {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-15px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-
-}
-
-.icon-cube {
-  z-index: 9;
-  top: -0.8em;
-  right: 1em;
-  animation-name: cubeRotate;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes cubeRotate {
-  0% {
-    transform: rotateY(0deg) translateY(0px);
-  }
-
-  50% {
-    transform: rotateY(180deg) translateY(-12px);
-  }
-
-  100% {
-    transform: rotateY(360deg) translateY(0px);
-  }
-}
-
-.icon-circle {
-  z-index: 9;
-  left: 0;
-  bottom: 0;
-  animation-name: shakeEffect;
-  animation-duration: 6s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes shakeEffect {
-
-  50% {
-    left: 5%;
-    bottom: 10%;
-  }
-
-}
-
-.icon-zigzag {
-  z-index: 9;
-  top: 1.5em;
-  left: -0.3em;
-  animation: zigzagAnimation 5s ease-in infinite;
-}
-
-@keyframes zigzagAnimation {
-  50% {
-    left: 5%;
-    top: 2%;
-  }
-}
-
-.icon-plus {
-  z-index: 9;
-  top: -0.8rem;
-  left: 50%;
-  animation: shakeEffectPlus 5s ease-in infinite;
-}
-
-@keyframes shakeEffectPlus {
-  50% {
-    top: 3%;
-    left: 48%
-  }
-}
-
-
 
 /* about section styling */
 .about .title::after {
@@ -905,11 +766,18 @@ footer {
   #git-stats {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .project .All-project {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 @media (max-width: 820px) {
   #home {
     background: url("https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .hero-section-heading {
@@ -930,10 +798,7 @@ footer {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
   }
-  .project .All-project {
-    grid-template-columns: 1fr;
-  }
-
+  
   #git-stats {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -948,6 +813,10 @@ footer {
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
+  }
+
+  .project .max-width{
+    padding: 40px;
   }
 }
 
@@ -979,8 +848,14 @@ footer {
   }
 }
 
-@media (max-width: 385px) {
-  #project1 .title::after {
-  font-size: 17px;  
+@media (max-width: 486px) {
+  
+  section .title::after{
+    font-size: 17px;
+  }
+
+  .project .max-width{
+    padding: 20px;
   }
 }
+
