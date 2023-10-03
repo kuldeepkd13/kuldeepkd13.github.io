@@ -73,3 +73,56 @@ $(document).ready(function(){
       }
   });
 });
+
+  // Function to send the email
+  function sendMail(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    }
+
+    const serviceID = "service_a1t9fvd";
+    const templateID = "template_4t9q0tb";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(function (response) {
+            console.log("Email sent:", response);
+            alert("Message sent successfully!");
+            document.getElementById("contact-form").reset(); 
+        })
+        .catch(function (error) {
+            console.log("Error sending email:", error);
+            alert("Error sending message. Please try again later.");
+        });
+}
+
+// Add an event listener to the form
+document.getElementById("contact-form").addEventListener("submit", sendMail);
+
+// function sendMail(e){
+//     e.preventDefault()
+//     var params = {
+//         name:document.getElementById("name").value,
+//         email:document.getElementById("email").value,
+//         subject:document.getElementById("subject").value,
+//         message:document.getElementById("message").value
+//     }
+//     const serviceID = "service_a1t9fvd"
+//     const templateID = "template_4t9q0tb"
+    
+//     emailjs
+//     .send(serviceID,templateID,params)
+//     .then((res)=>{
+//         document.getElementById("name").value="",
+//         document.getElementById("email").value="",
+//         document.getElementById("subject").value="",
+//         document.getElementById("message").value=""
+//         console.log(res)
+//         alert("message gya")
+//     })
+//     .catch((err) => console.log(err))
+// }
